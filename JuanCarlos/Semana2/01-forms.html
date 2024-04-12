@@ -9,7 +9,8 @@
     <form action="">
       <!-- input va a depender del atributo que le demos para definir su comportamiento -->
       <label for="input-nombre">Nombre Completo:</label>
-      <input id="input-nombre" placeholder="Ej. Jorge Garnica" />
+      <input id="input-nombre" placeholder="Ej. Jorge Garnica" pattern="[A-Za-z]"/>
+      <!-- patron regular, regular pattern, para validar segun un patro Ej.  ([A-Z])\w+ -->
       <br />
       <label for="input-edad">Edad:</label>
       <input type="number" id="input-edad" placeholder="Ej. 25" min="18" max="60" />
