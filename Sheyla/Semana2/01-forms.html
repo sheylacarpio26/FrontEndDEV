@@ -8,14 +8,16 @@
     <form>
         <!--input va a depender del atributo q le demos para definir su conportamiento, siempre va con un label-->
         <label for="input-nombre">Nombre Completo:</label>
-        <input type="text" id="input-nombre" placeholder="Ej. Jorge Garnica">
+        <input type="text" id="input-nombre" placeholder="Ej. Jorge Garnica"
+        pattern="[A-Za-z]">
+        <!-- Lo de arriba es un patron regular pattern Por ejemplo q acepte solo letras-->
         <!--br --Para un salto de línea -->
         <br>
         <label for="input-edad">Edad:</label>
-        <input type="number" id="input-edad" placeholder="Ej. 25">
+        <input type="number" id="input-edad" placeholder="Ej. 25" min="18" max="60">
         <br>
         <label for="input-pass">Contraseña:</label>
-        <input type="password" id="input-pass">
+        <input type="password" id="input-pass" minlength="5" maxlength="8">
         <br>
         <h4>Género</h4>
         <input type="radio" id="radio-masculino" name="genero">
@@ -67,6 +69,8 @@
         <input type="date" id="input-fecha">
         <label for="color">Color:</label>
         <input type="color" id="color">
+        <br>
+        <input type="submit" value="Enviar">
     </form>
 </body>
 </html>
