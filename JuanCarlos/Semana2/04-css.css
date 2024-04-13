@@ -1,0 +1,19 @@
+/* selectores de etiqueta */
+h1{
+    color:peru;
+    font-family: Arial;
+
+}
+
+p {
+    font-style: italic;
+    font-family: 'Times New Roman' ;
+}
+
+/* selectores de clase, son muy comunes */
+.importante{
+    background-color: aquamarine;
+}
+.importante2{
+    background-color: yellowgreen;
+}
