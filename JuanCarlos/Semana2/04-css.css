@@ -17,3 +17,24 @@ p {
 .importante2{
     background-color: yellowgreen;
 }
+.subrayado{
+    text-decoration: underline;
+    background-color: khaki;
+}
+
+/* selector de id */
+#introduccion{
+    font-size: 19px;
+    
+}
+
+/* poder jugar con la estrutura y unos operadores que me van a permitir jugar */
+/* Hace referemcoa a los primeros elemntos hijos */
+ul > li{
+    color: blue;
+    text-decoration: underline;
+}
+/* selector , todos los elemntos hijos sin distincion. Todos los li que esten dentro de un ul */
+ul li{
+    font-weight: bold;
+}
