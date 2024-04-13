@@ -38,3 +38,41 @@ ul > li{
 ul li{
     font-weight: bold;
 }
+
+/* ~ , para seleccionar hermanos, que estan a su msimo nivel son considerados hermanos por el tipo o se puede usar el comodin para todos "*" */
+.contenido ~ div{
+border: 2px solid peru;
+}
+
+
+/* tablas */
+/* la "," es como un y td y th */
+table, th, td{
+    border:2px solid blue;
+}
+
+/* Pseudoclases */
+
+
+/* lo que hace el nth-of-type (even u odd) es para seleccionar los que son pares o impares y de acuerdo a eso asignarle propiedades*/
+/* even es par */
+tr:nth-of-type(even){
+    background-color: gray;
+}
+
+/* odd es impar */
+tr:nth-of-type(odd){
+    background-color: aquamarine;
+}
+
+/* hover es para cuando se pone sobre encima del item, osea cuando pasamos el mouse por encima */
+/* cursor para  cambiar el icono del cursor*/
+tr:hover{
+    background-color: skyblue;
+    cursor: pointer;
+}
+
+/* es  para que los elementos article que sean hermanos, puede darse un numero, y ba a buscar uno que conincida con ese numero */
+article:nth-child(2){
+background-color: chocolate;
+}
