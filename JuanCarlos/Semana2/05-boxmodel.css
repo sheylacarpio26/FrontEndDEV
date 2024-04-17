@@ -1,0 +1,46 @@
+/* Buena practica para css */
+/* usar como din * para todos con border-box para todos los elementos */
+*{
+    box-sizing: border-box;
+    /* algunos elementeos traen estilos por defecto, comunmente los mas molestos son el padding y el margin por defecto, entonces es mejor quitarlos , como buena practica en css */
+    margin: 0;
+    padding: 0;
+}
+header{
+    border: 2px solid blue;
+    padding: 10px;
+    margin: 20px;
+    /* cuando se le da un tamaño no lo hace considerando la caja con el borde, lo hace considerando el contenido */
+    width: 150px;
+    height: 100px;
+    /* para que hacer que se tome como referencia el tamaño de contenido mas el borde mas el padding se usa el border-box */
+    /* box-sizing: border-box; */
+}
+/* La mayoria de elementos va a venir con display block, div, article, header, h1,h6
+ */
+.resaltar{
+    background-color: gold;
+    display: 	inline;
+    height: 1000px;
+    width: 1000px;
+    /* display:block; */
+    /* algunos pocos van a venir con inline, span, button, label, input */
+    /* inline, me voy a acomodar al contenido, no puedo tener width */
+}
+article{
+    border: 2px solid red;
+    padding: 20px;
+    width: 600px;
+    text-align: center;
+}
+
+/* epecificidad */
+/* id es unico */
+#noticia{
+    color: blue;
+}
+
+/* clases aplican a varios */
+.articulos{
+    color: red;
+}

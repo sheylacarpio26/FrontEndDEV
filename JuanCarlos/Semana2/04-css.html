@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* etiqueta <style> */
+        header {
+            border: 4px solid rebeccapurple;
+        }
+    </style>
+    <!-- Para relacionar un archivo de CSS aparte: con link -->
+    <link rel="stylesheet" href="./04-css.css">
+</head>
+<body>
+    <header>
+        <h1>Hola Mundo</h1>
+    </header>
+    <main>
+        <section>
+            <h2 style="color: blue;">Noticias</h2>
+            <article>
+                <!-- p*2 Lorem -->
+                <p id="introduccion" class="importante">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius doloremque consectetur nesciunt, quis exercitationem tenetur possimus itaque ratione alias illo adipisci repellendus soluta praesentium facilis quibusdam, quos a cupiditate delectus!
+                </p>
+                <p class="importante2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, at veritatis. Voluptatem tempore autem atque, fuga delectus pariatur quidem ratione praesentium eos officiis repellendus iste repellat, cupiditate numquam eveniet accusantium.
+                </p>
+                <p class="subrayado">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </p>
+            </article>
+        </section>
+        <section>
+            <h2>Nuestras Categprías</h2>
+            <ul>
+                <li>Link</li>
+                <li>Link</li>
+                <li>Link</li>
+                <ul>
+                    <!-- div para los primero elementos hijos se usa "">" -->
+                    <div>
+                        <li>Link2</li>
+                    <li>Link2</li>
+                    <li>Link2</li>
+                    </div>
+                    
+                </ul>
+            </ul>
+        </section>
+        <section>
+            <h2 class="contenido">Contenido</h2>
+            <div>Lorem ipsum dolor sit amet.</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+            <h3>Detalles</h3>
+            <div>
+                Lorem ipsum dolor sit.
+            </div>
+        </section>
+        <br/>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            Plato
+                        </th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Arroz con leche
+                        </td>
+                        <td>5</td>
+
+                    </tr>
+                    <tr>
+                        <td>Leche de tigre</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Lomo saltado</td>
+                        <td>45</td>
+                    </tr>
+                    <tr>
+                        <td>Chupe de camarones</td>
+                        <td>45</td>
+                    </tr>
+                    <tr>
+                        <td>Wantan</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Arroz zambito</td>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <br><br><br><br>
+    </main>
+</body>
+</html>
