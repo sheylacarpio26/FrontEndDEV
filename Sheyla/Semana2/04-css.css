@@ -1,0 +1,83 @@
+/* Selectores de etiqueta */
+h1 {
+    color: peru;
+    font-family: Arial;
+}
+p{
+    font-style: italic;
+    font-family: sans-serif;
+}
+
+/* Selectores de clase */
+
+.importante{
+    background-color: aquamarine;
+}
+.subrayado{
+    text-decoration: underline;
+}
+
+/* Selectores de ID */
+
+#introduccion{
+    font-size: 24px;
+}
+/* poder jugar con las estructura y unos operadores q van a permitir jugar */
+/* operador: */
+/* > - Hace referencia a los primeros elementos hijos */
+/* De los elementos ul se va a afectar a los li */
+ul>li{
+    color: blue;
+    text-decoration: underline;
+} 
+/* clase etiqueta */
+/* #id > .clase */
+
+/* selector selectorHijo - TODOS los elementos hijos  */
+ul li {
+    /* weight: bold negrita */
+    font-weight: bold;
+}
+/* ~ se saca con ALT + 126 */
+/* ~, para seleccionar hermanos */
+/* Lo siguiente solo selecciona todos los DIV hermanos de clase contenido
+por lo que no hace efecto a h3 xq no es div */
+
+.contenido ~ div{
+    border: solid peru;
+}
+
+/* contenido ~ *   - va a afectar a todo los hermanos sin diferencia*/
+
+/* con , se puede incluir varios elementos */
+/* para las tables, td, th   se van aplicar el siguiente stilo */
+table,td,th{
+    border: 2px solid black;
+}
+
+/* Pseudoclases, lo siguiente por ejemplo:*/
+/* hover - se activa cuando se pasa el mouse por el elemento tr */
+/* pointer - para que aparezca la manito cuando se pasa por la tabla */
+/* nth-of-type(even)  - afecta a pares */
+tr:nth-of-type(even){
+    background-color: gray;
+}
+/* nth-of-type(odd)  - afecta a impares */
+tr:nth-of-type(odd){
+    background-color: aquamarine;
+}
+
+/* nth-child(2)   - afecta al hijo 2 */
+/* Los elementos article q sean hermanos (mismo nivel) y buscar uno q coincida con el número2 */
+article:nth-child(2){
+    background-color: chocolate;
+}
+
+/* Según el orden afecta los estilos, los q se declaran después predominan */
+
+/* hover - se activa cuando se pasa el mouse por el elemento tr */
+/* pointer - para que aparezca la manito cuando se pasa por la tabla */
+tr:hover{
+    background-color: skyblue;
+    cursor: pointer;
+}

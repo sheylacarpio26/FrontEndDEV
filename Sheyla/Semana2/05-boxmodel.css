@@ -1,0 +1,44 @@
+/* Buena práctica para que se aplique a todos los elementos */
+*{
+    box-sizing: border-box;
+    /* Algunos elementos traen estilos por defectos
+    comunmente son el padding y el margin. Poe ejemplo el h1 
+    ya trae por defecto padding y el margin*/
+    /* Para quitar estos estilos por defecto se le quita a todos
+    en esta sección */
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    border: 2px solid blue;
+    padding: 10px;
+    margin: 20px;
+    /* Cuando le damos el tamaño, no lo hace considerando la caja con el borde, lo hace considerando el contenido */
+    width: 150px;
+    height: 100px;
+    /* box-sizing: border-box -Fuerza a q tome como referencia el borde de la caja */
+    /* box-sizing: border-box; */
+}
+/* display block: uno abajao */
+/* inline : se acomoda al contenido */
+/* La mayoria de elementos viene con display block, div, article, header, h1, h6 */
+.resaltar{
+    background-color: goldenrod;
+}
+/* Algunos elementos vienen con inline, se acomodan al contenido, no puede  tener width, height, padding */
+
+article{
+    border: 2px solid red;
+    padding: 20px;
+    width:300px;
+    text-align: center;
+}
+/* .articulos es una clase q puede aplicar a varios de esa clase */
+.articulos{
+    color: red;
+}
+/* #noticia es in ID, q especifica un elemento único por lo q predomina */
+#noticia{
+    color: blue;
+}
