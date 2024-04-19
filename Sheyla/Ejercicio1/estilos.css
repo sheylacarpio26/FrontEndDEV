@@ -1,0 +1,61 @@
+/* RESET */
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    /* BORDER STemporal para ver donde empieza y termina cada elemento */
+    border: 1px solid red;
+}
+
+header{
+    text-align: center;
+}
+
+h1{
+    /* ancho máximo */
+    max-width: 1024px;
+    margin: 30px;
+}
+p{
+    max-width: 1700px;
+    margin: 10px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+small{
+    margin: 40px 0 0 0;
+    display: block;
+    /* En caso no encuentre una fuente saltara a la siguiente */
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    width: 100%;
+}
+.contenedor{
+    max-width: 1200px;
+    /* margin, padding */
+    /* cuando damos dos valores aplican para arriba y abajo */
+    /* margin: 20px 40px; */
+    /* cuando damos 4 valores  aplican para arriba, derecha, abajo, izquierda*/
+    /* margin: 10px 20px 30px 40px; */
+    /* 0 arriba y abajo, auto derecha izquierda para q se centre en la pantalla */
+    margin: 0 auto;
+}
+.btn-principal{
+    min-width: 100px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: rgb(232, 217, 197);
+}
+.btn-secundario{
+    min-width: 100px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+}

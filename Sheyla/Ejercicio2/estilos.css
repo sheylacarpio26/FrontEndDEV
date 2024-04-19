@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    border: 1px solid red;
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    /* max-width: 1200px; */
+    display: inline-flex;
+    border: 8px solid rgb(135, 235, 157);
+}
+div{
+    /* display: inline-block; */
+    text-align: center;
+    max-width: 30%;
+    border: 4px solid skyblue;
+    margin: 10px;
+}
+h2{ 
+    margin: 20px;
+}
+h3{
+    margin: 20px;
+}
+
+
+h4{ 
+    margin: 30px,auto,0px;
+}
+
+.version{
+    margin: 0px;
+    color: darkslategrey;
+}
+img{
+    width: 60%;
+}
+
+.div3{
+    margin-right: 0px;
+}

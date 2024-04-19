@@ -42,3 +42,7 @@ article{
 #noticia{
     color: blue;
 }
+/* Clases aplican a varios */
+.articulos{
+    color: red;
+}
