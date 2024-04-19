@@ -1,0 +1,52 @@
+ /* Global */
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* temporal para identificar nuestras etiquetas*/
+    border: 1px solid red;
+ }
+main{
+    
+    border: 6px solid purple;
+    display:inline-flex;
+}
+
+ div{
+   text-align: center;
+    border: 3px solid green;
+    padding: 10px;
+    margin: 10px;
+    max-width: 30%;
+    max-height: 70%;
+    min-width: 30%;
+    min-height: 70%;
+ }
+
+ h2{
+ text-align: center;
+ color: brown;
+ padding: 20px;
+ }
+
+ h4:first-of-type{
+    text-align: center;
+    color:aqua;
+    padding: 10px 10px 30px;
+    }
+     
+    h4{
+        center;
+        color:gray;
+        padding: 50px 10px 1px;
+    } 
+
+.finalcol1{
+    text-align: center;
+    color:magenta;
+    padding:0%;
+}
+
+ img{
+    width: 100%;
+ }

@@ -1,0 +1,11 @@
+main {
+    display: flex;
+    justify-content: space-between; /* Distribuye uniformemente los divs */
+  }
+  
+  main > div {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
