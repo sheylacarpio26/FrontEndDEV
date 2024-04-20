@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* temporal */
+    /* border:1px solid red; */
+}
+
+body{
+  background-color: #1E1F24;
+  color:white;
+  font-family: "Open Sans", sans-serif;
+}
+
+.contenedor{
+  max-width: 1200px;
+  margin:0 auto;
+}
+
+h1 {
+  font-size:78px;
+  font-weight: 700;
+}
+
+p{
+  font-size:20px;
+}
+
+nav li{
+  list-style: none;
+}
+
+button{
+  /* geometría del botón */
+  padding:16px;
+  color:white;
+  border:1px solid gray;
+}
+
+.btn-primario {
+  background-color: #205BF1;
+}
+
+.btn-secundario {
+  background-color: #34353A;
+}
+
+.main-menu {
+  display:flex;
+  gap:40px;
+  font-size:14px;
+  padding:20px 0;
+}
+
+.links {
+  display:flex;
+  flex-grow: 5;
+  /* gap - brecha, nos sirve para espaciar elementos dentro de flex */
+  gap:20px;
+  align-items: center;
+}
+
+.access {
+  display: flex;
+  gap:20px;
+  align-items: center;
+}
+
+/* header */
+header {
+  padding:60px;
+}
+
+header h1, header p{
+  margin-bottom:40px;
+  max-width: 55%;
+}
+
+/* del nav y del header todos los elementos (*) */
+nav *, header *{
+  position: relative;
+}
+
+/* absolute header */
+.absolute {
+  position:absolute;
+}
+
+.espiral {
+  top: -50px;
+  left: 800px;
+}
+
+.imagen1 {
+  top: 200px;
+  right: 350px;
+}
+
+.imagen2 {
+  top: 300px;
+  right:120px;
+}
+
+.imagen3 {
+  top: 450px;
+  right:450px;
+}
+
+.imagen4 {
+  top: 550px;
+  right:0;
+}
+
+@media screen and (width < 992px) {
+  header{
+    text-align: center;
+    margin-bottom: 300px;
+  }
+
+  header h1, header p{
+    max-width: 100%;
+  }
+
+  .espiral {
+    top: 500px;
+    left: -20px;
+  }
+  
+  .imagen1 {
+    top: 600px;
+    left: calc(50% - 150px);
+  }
+  
+  .imagen2 {
+    top: 750px;
+    left:calc(50% - 250px);
+  }
+  
+  .imagen3 {
+    top: 640px;
+    left:-100px;
+  }
+  
+  .imagen4 {
+    top: 640px;
+    right:0;
+  }
+}
