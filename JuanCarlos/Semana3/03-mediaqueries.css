@@ -1,0 +1,30 @@
+header{
+    text-align: center;
+    
+}
+
+h1{
+    /* font-size: 96px; */
+    /* con calc() hago operaciones por ejemplo para usar un tamaño base en px y agregarle la proporcion del viewport vw cuando se modifique el ancho del viewport*/
+    /* font-size: calc(18px + 4.8vw); */
+
+    /* las unidades em son medida que toma de referencia a algo, y toma el valor de lo mas cercano */
+    font-size: 2em;
+    color: peru;
+    font-family: Arial;
+}
+
+@media screen and (width < 1024px){
+    h1{
+        font-size: 72px;
+        color: purple;
+    }
+}
+
+
+@media screen and (width < 480px){
+    h1{
+        font-size: 48px;
+        color: greenyellow;
+    }
+}

@@ -1,0 +1,28 @@
+ /* RESET */
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* temporal para identificar nuestras etiquetas*/
+    border: 1px solid red;
+ }
+
+ .contenedor {
+    padding: 60px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    
+    
+ }
+ strong{
+    font-size: 100px;
+    font-family:'Arial Narrow Bold', sans-serif;
+
+    
+ }
+ 
+ .iconos{
+    flex-wrap:wrap;
+    justify-content: space-between;
+ }

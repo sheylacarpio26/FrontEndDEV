@@ -1,0 +1,43 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.menu{
+    background-color: peru;
+    border: 2px solid black;
+    height: 600px;
+    /* va a afectar SOLO a los primero hijos */
+    display: flex;
+
+    /* flex-direction: row-reverse */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    flex-direction: row;
+    /* horizontal */
+    /* justify-content: space-between; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+
+    /* vertical */
+    align-items: center;
+
+    /* flex-wrap:nowrap; */
+    flex-wrap: nowrap;
+
+    
+}
+
+.link {
+    
+    background-color: aquamarine;
+    border: 2px solid steelblue;
+    height: 100px;
+    width: 100px;
+}
+
+.link:nth-of-type(1){
+    flex-grow: 4;
+}
