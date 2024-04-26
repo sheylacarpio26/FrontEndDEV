@@ -1,0 +1,39 @@
+img {
+    width: 200px;
+    animation-name: vuelo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+/* @keyframes nombreanimacion */
+@keyframes vuelo {
+
+    /* vamos a definir fotogramas pero con css, similiar a los meidaqueries */
+    /* con porcentaje de 0% a 100% */
+
+    0% {
+        transform: translate(0,0) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(500px,0) rotate(90deg);
+    }
+
+    50% {
+        transform: translate(500px,0) rotate(180deg);
+    }
+    75% {
+        transform: translate(500px,500px) rotate(270deg);
+    }
+
+    85% {
+        transform: translate(0px,500px) rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}

@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    border: 1px solid red;
+}
+
+.padre{
+    min-height: 100vh;
+    display: grid;
+
+    /* grid-template-columns: 250px 250px 250px; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* repeat es una funcion, que pide una cantidad y una unidad de medida */
+    /* grid-template-columns: repeat(3,25px); */
+    /* minmax es una funcion, que acepta un valor minimo y un maximo */
+    grid-template-columns: repeat(3,minmax(200px,1fr));
+    /* filas */
+    grid-template-rows: repeat(4, minmax(100px,1fr));
+    gap: 10px;
+
+}
