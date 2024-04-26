@@ -1,40 +1,66 @@
 /* RESET */
-*{
+* {
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0;
     /* BORDER STemporal para ver donde empieza y termina cada elemento */
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
-header{
+header {
     text-align: center;
 }
 
-h1{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Fraunces", serif;
+    font-weight: 300;
+}
+
+h1 {
     /* ancho máximo */
     max-width: 1024px;
     margin: 30px;
+    /* font-family: "Fraunces", serif; */
+    font-weight: 300;
+    font-size: 72px;
 }
-p{
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+p {
     max-width: 1700px;
     margin: 10px auto;
     font-family: Arial, Helvetica, sans-serif;
 }
-button{
+
+button {
     margin-top: 10px;
     margin-bottom: 30px;
 }
-small{
+
+small {
     margin: 40px 0 0 0;
     display: block;
     /* En caso no encuentre una fuente saltara a la siguiente */
     font-family: Arial, Helvetica, sans-serif;
 }
-img{
+
+img {
     width: 100%;
 }
-.contenedor{
+
+.contenedor {
     max-width: 1200px;
     /* margin, padding */
     /* cuando damos dos valores aplican para arriba y abajo */
@@ -44,18 +70,156 @@ img{
     /* 0 arriba y abajo, auto derecha izquierda para q se centre en la pantalla */
     margin: 0 auto;
 }
-.btn-principal{
+
+.btn-principal {
     min-width: 100px;
     padding: 10px 15px;
     border-radius: 20px;
     border: 1px solid black;
     background-color: rgb(232, 217, 197);
 }
-.btn-secundario{
+
+.btn-secundario {
     min-width: 100px;
     padding: 10px 15px;
     border-radius: 20px;
     border: 1px solid black;
     background-color: black;
     color: white;
+}
+
+.table-info {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    /* Para eliminae los lineas blancas entre las columnas */
+    border-collapse: collapse;
+}
+
+.table-info td {
+    padding: 20px;
+
+
+}
+
+/* Todas las filas impares con: tr:nth-of-type(odd) */
+/* De table-info todos los hijos q sean tr impares con: tr:nth-of-type(odd)
+ y de esos tr impares todos los td que tengan el fondo amarillo */
+.table-info tr:nth-of-type(odd) td {
+    /* que tengan el fondo amarillo  */
+    background-color: #FED501;
+    /* Otra manera de dar el mismo color: abajo */
+    /* background-color: rgb(244, 208, 63); */
+    /* hsla Hue, Saturation, Lightness */
+    /* Matiz, saturación, luminosidad */
+    /* background-color: hsla(49, 100%, 59%,1); */
+
+}
+
+/* De table-info que todos lo hijo tr impares con:  td:nth-of-type(odd)
+y de estos tr impares todos los td q sean primeros hijos
+con:  td:nth-of-type(1)*/
+.table-info tr:nth-of-type(odd) td:nth-of-type(1) {
+
+    border-radius: 10px 0 0 10px;
+}
+
+/* de .table-info todos 
+los hijos que sean tr impares y de esos tr impares
+ todos los td que sean ultimos */
+.table-info tr:nth-of-type(odd) td:last-of-type {
+
+    border-radius: 0 10px 10px 0;
+}
+
+section {
+    padding: 60px;
+}
+
+.logo {
+    width: 275px;
+    height: 29px;
+}
+
+/* Para todos los elementos li de nav */
+nav li {
+    text-decoration: none;
+    list-style: none;
+}
+
+nav * {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-principal {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.links {
+    display: flex;
+    min-width: 500px;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+
+}
+
+.titulo-recursos {
+    margin: 60px;
+    text-align: center;
+}
+
+.cards-recursos {
+    display: flex;
+    text-align: center;
+}
+
+.cards-recursos h3 {
+    margin:20px;
+  }
+
+.card-img {
+    height: 225px;
+    max-width: 330px;
+    display: flex;
+    align-items: center;
+}
+
+.card-img img {
+    height: 100%;
+}
+
+/* mediaqueries */
+@media screen and (width < 576px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    section {
+        padding: 30px;
+    }
+
+    .titulo-recursos {
+        margin: 16px;
+    }
+
+    .cards-recursos {
+        flex-direction: column;
+    }
+
+    .card-img {
+        max-width: 100%;
+        justify-content: center;
+        height: 300px;
+    }
 }

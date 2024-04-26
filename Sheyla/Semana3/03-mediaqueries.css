@@ -1,0 +1,54 @@
+
+html{
+    font-size: 32px;
+}
+header{
+    text-align: center;
+    font-size: 20px;
+}
+/* rem toma al elemento más leejano */
+h1{
+    /* font-size: 96px; */
+    /* Va a tener un tamaño promedio de 24px pero va a tener
+    en cuenta el 5% del vw */
+    /* font-size: calc(24px + 5vw); */
+    /* 2em va a tomar el valor más cercano */
+     /* El header es el valor más cercano q tiene 20px
+     y lo multiplica por 2 q sería 40px*/
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: peru;
+}
+h2{
+    font-size: 1rem;
+}
+img{
+    /* Al 100% la imagen toma el tamaño del contenedor */
+    width: 100%;
+    /* top: 0;
+    left: 0; */
+    /* vh es segun el contenedor */
+    /* height: 100vh; */
+}
+/* para anchos menores a 1024px Por ejemplo tables*/
+@media screen and (width <1024px) {
+    h1{
+        font-size:72px;
+        color: blueviolet;
+    }
+    header{
+        font-size: 40px;
+    }
+}
+/* para moviles */
+@media screen and (width <480px) {
+    h1{
+        font-size:48px;
+        color: rebeccapurple;
+    }
+    header{
+        text-align: center;
+        font-size: 30px;
+    }
+
+}

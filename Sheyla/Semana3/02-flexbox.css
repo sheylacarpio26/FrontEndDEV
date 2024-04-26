@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    background-color: peru;
+    border: 2px solid black;
+    height: 600px;
+    display: flex;
+    /*El display va a afectar SOLO a los primeros hijos */
+    /* flex-direction: row-reverse; */
+    flex-direction: row;
+    /* flex-direction: column-reverse; */
+    /* flex-direction: column; */
+    /* HORIZONTAL */
+    /* justify-content: center; */
+    /* space-between el espacio es entre los elementos */
+    /* justify-content: space-between; */
+    /* space-around da el mismo espacio al rededor */
+    /* justify-content: space-around; */
+    /* space-evenly el mismo espacio en todo */
+    justify-content: space-evenly;
+    /* VERTICAL */
+    align-items: center;
+    flex-wrap: nowrap;
+    /* flex-wrap: wrap; */
+}
+
+.link {
+    background-color: aquamarine;
+    border: 2px solid steelblue;
+    height: 100px;
+    width: 100px;
+}
+/* A partir de abajo solo sirve si el contenedor padre
+es  nowrap */
+/* El primer elemento de link */
+.link:nth-of-type(1){
+    flex-grow: 4;
+}
+/* El segundo elemento de link */
+.link:nth-of-type(2){
+    flex-grow: 1;
+}
+.link:nth-of-type(5){
+    flex-shrink: 4;
+}
+.link:nth-of-type(6){
+    flex-shrink: 1;
+}

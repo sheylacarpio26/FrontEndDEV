@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    width: 800px;
+    height: 800px;
+    border: 2px solid black;
+    /* El position relative permite mover y los demás
+    elementos siguen teniendo en cuenta su espacio */
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+.caja1, .caja2, .caja3, .caja4{
+width: 150px;
+height: 150px;
+border: 2px solid red;
+}
+.caja1{
+    background-color: aqua;
+    /*  position: static  es posición por defecto */
+    position: relative;
+    /* quien tenga un mayor valor
+    en el z-index se pondrá por encima */
+    z-index: 10;
+}
+.caja2{
+    background-color: yellow;
+    /* absolute: Los demás elementos lo ignoran, no existe */
+    position: absolute;
+    /* El absolute tiene q tener una referencia en su contenedor padre
+    que tenga el position relative */
+    /* se mueve arriba 20px y a la izquierda 30px */
+    top: 20px;
+    left: 30px;
+    z-index: 1;
+}
+.caja3{
+    background-color: magenta;
+    /* position: relative;
+    top: 30px;
+    left: 50px;
+    */
+} 
+.caja4{
+    background-color: orange;
+    /* No toma en cuenta el relativo */
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+}
+/* NOTA: para usar position absolute ya no es necesario
+especificar en el contenedor padre el position relative 
+porque los navegadores actuales ya no consideran*/

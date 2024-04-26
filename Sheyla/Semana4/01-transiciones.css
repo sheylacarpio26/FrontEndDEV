@@ -1,0 +1,26 @@
+.caja{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    transition-property: all;
+    transition-duration: 2s;
+    /* En cuanto al tiempo se puede poner en segundos 
+    1s 1 segundo
+    500ms 500milisegundos */
+    transition-delay: 500ms;
+    /* Define como se va a ejecutar la animación */
+    transition-timing-function: ease-in;
+}
+
+/* Se activa cuando se pone el puntero encima de la caja */
+.caja:hover {
+    background-color: blue;
+    /* Las transformaaciones se aplican al final */
+    transform: scale(1.5);
+    /*Traslate(x,y) */
+    transform:translate(20px,40px);
+    /* Rota 180 grados */
+    transform: rotate(180deg);
+    /* width: 150px;
+    height: 150px; */
+}

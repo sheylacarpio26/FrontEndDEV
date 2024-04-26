@@ -1,0 +1,66 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box
+}
+main{
+    width: 1000px;
+    margin: 32px auto;
+    background-color: greenyellow;
+}
+article{
+    border: 1px solid red;
+    width: 300px;
+    padding: 16px;
+}
+.anuncio1{
+    background-color: violet;
+    /* position: static; */
+    /* se mueve con referencia a su posición estatica */
+    position: relative;
+    bottom: -10px;
+    left: 20px;
+   z-index: 10;
+    
+}
+.anuncio2{
+    /* POSITION ABSOLUTE */
+    /* Los elementos se colocan en base al contenedor padre */
+    background-color: chocolate;
+    position: absolute;
+    /* top: 0;
+    bottom: 0; */
+    /* top: 50px; */
+    bottom: 80px;
+    /* left: 100px; */
+    right: 80px;
+}
+header{
+    background-color: crimson;
+       /* z-index es el orden para sobreponerse sobre otra etiqueta*/
+       z-index: 30;
+    /* Se queda en el mismo lugar por más
+    que se mueva la pantalla, es como fijarlo */
+    /* Es útil para los menus que también se quedan 
+    en la misma posición en pantalla al hacer scroll */
+    position: fixed;
+    /* top: 0; */
+    /* right: 0; */
+    right: 0;
+    width: 100%;
+}
+.nav1{
+    background-color: coral;
+    height: 45px;
+    position: sticky;
+    /* Se detiene en la parte superior a 40px */
+    top: 40px;
+}
+.nav2{
+    background-color: cornflowerblue;
+    height: 45px;
+    position: sticky;
+    /* Se detiene en la parte superior a 80px */
+    top: 80px;
+}

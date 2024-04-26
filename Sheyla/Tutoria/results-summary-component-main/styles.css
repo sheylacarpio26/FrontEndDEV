@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&family=Overpass:wght@800&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 18px;
+    background-color: hsl(221, 100%, 96%);
+    height: 100vh;
+    /* Por defecto en flex el eje principal es el horizontal */
+    display: flex; /*por defecto el eje es horizontal se aplica el flex-direction: row*/
+    /* Cambiar el eje del felex a vertical con lo siguiente */
+    flex-direction: column;/*se cambia el eje a vertical*/
+    justify-content: center;
+    align-items: center;
+}
+.summary-component {
+    height: 400px;
+    border: 1px solid red;
+    border-radius: 20px;
+    background-color: hsl(0,0%,100%);
+    display: flex;
+}
+.result {
+    width: 300px;
+    padding: 2rem;
+    background-attachment: fixed;
+}

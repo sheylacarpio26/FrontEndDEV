@@ -1,0 +1,52 @@
+img {
+    width: 150px;
+    /* por defecto se ejecuta al cargar la página */
+    animation: vuelo;
+    /* Siempre se tiene q indicar la duración de la animación */
+    animation-duration: 5s;
+    /* Que se ejecute infinitamente */
+    animation-iteration-count: infinite;
+    /* Para que inicie lento y vaya rapido al final */
+    animation-timing-function: ease-in-out;
+}
+
+/* vuelo es el nombre q se le asigna a la animación */
+@keyframes vuelo {
+
+    /* Vamos a definir fotogramas con css,
+similar a los media queries */
+    /* concentaje de 0% al 100% */
+  /* 0% ESTADO Inicio */
+    0% {
+        /* rota 90 grados */
+        /* posición inciial 0,0 */
+        transform: translate(0,0) rotate(90deg);
+    }
+    25%{
+        transform: translate(500px,0) rotate(90deg);
+    }
+    30%{
+        transform: translate(500px,0) rotate(180deg);
+    }
+    /* 50% ESTADO medio */
+    50% {
+        /* se traslada al punto x,y 500px, 500px */
+        /* rota 180 grados */
+        transform: translate(500px,500px) rotate(180deg);
+    }
+    /* 100% ESTADO final */
+    55%{
+        transform: translate(500px,500px) rotate(270deg);
+    }
+    70%{
+        transform: translate(0,500px) rotate(270deg);
+    }
+    75%{
+        transform: translate(0,500px) rotate(360deg);
+    }
+    100% {
+        /* rota 360 grados */
+       /* Se traslada a la posición incial */
+        transform: translate(0,0) rotate(360deg);
+    }
+}
