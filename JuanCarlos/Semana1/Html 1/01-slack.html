@@ -1,0 +1,76 @@
+<!-- Doctype me permite indicar la version de HTML que estoy utilizando - V5  -->
+<!-- CTRL + } -->
+<!DOCTYPE html>
+<html lang="es">
+<!-- el head es para configuracion e informativa para el navegador -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura Slack</title>
+</head>
+
+<!-- en el body va todo lo que se ve, la parte visual -->
+
+<body>
+    <!-- en el id se le pone un codigo que empieza siempre con letras, para identificarlo como un DNI -->
+    <nav id="menu">
+        <!-- span es una etiqueta no semantica, pero permite envolver texto, como un resaltador, como un separador de textos -->
+        <span>Slack</span>
+        <!-- ul es para lista desordenada -->
+        <ul>
+            <!-- li para definir elementos de la lista -->
+            <li>Funciones</li>
+            <li>Soluciones</li>
+            <li>Empresas</li>
+            <li>Recursos</li>
+            <li>Precio</li>
+        </ul>
+        <!-- div es un divisor, no es una etiqueta semantica -->
+        <div>
+            <a href="">Iniciar sesion</a>
+            <button>Hablar con un asesor</button>
+            <button>Probar gratis</button>
+        </div>
+
+    </nav>
+    <!-- hr e una linea horizontal -->
+    <hr>
+    <header>
+        <div>
+            <h1>Creada para las personas Diseñada
+                para la productividad</h1>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <button>Registrate con el correo electronico</button>
+            <button>Registrate con google</button>
+            <p>Probar Slack es gratis todo el tiempo
+                que quieras</p>
+        </div>
+        <!-- imagen -->
+        <img src="https://infoalimentos.org.ar/images/temas/nutricion_y_estilos_de_vida/TEMAS_espinaca_popeye_interna_horiz_840x410.jpg"
+            width="400" alt="foto de popeye alegre">
+
+    </header>
+    <hr>
+    <main>
+        <section>
+            <!-- para img usar webp jpg svg png,pues son los mas ligeros que existen -->
+            <!-- tipos de rutas: absolutas y relativas, p ejem. absolutas: "D:\CURSO BOOTCAMP CODIgo\Semana1" , la ruta absoluta no se deberia usar y si es recomendado usar una ruta relativa (es relativa a la carpeta donde se encuentra el proyecto): "./mapache.jpg" -->
+            <img src="./warrion.png" width="400" alt="imagen de un warrior">
+            <div>
+                <h2>Muevete mas eficientemente con todas tus herramientas en un mismo lugar</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>
+                        Ea tempora qui asperiores.
+                    </span></p>
+                <a href="www.Slack.com">Ver informacion acerca de la plataforma Stack</a>
+
+                <!-- br es un salto de linea o break -->
+                <br>
+                <a href="./extra.html" target="_blank">Mas informacion</a>
+                <br>
+                <a href="#menu">Ir a menu</a>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* temporal border */
+  /* border: 2px solid red; */
+}
+
+.contenedor {
+  min-width: 800px;
+  max-width: 1200px;
+  max-height: 1200px;
+  min-height: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+
+  /* Grid */
+  display: grid;
+  grid-template-columns: repeat(4, minmax(15px, 1fr));
+  grid-template-rows: repeat(4, minmax(150px, 1fr));
+  /* gap es para separacion entre items */
+  gap: 20px;
+}
+
+.card{
+    position: relative;
+    filter: grayscale(1);
+    /* transicion */
+    transition-duration: 1s;
+    animation-duration: 1s;
+    animation-name: entrada;
+    animation-timing-function: ease-out;
+
+}
+
+.card:hover{
+    filter: grayscale(0);
+    transform: translate(0, 5px) scale(1.02) rotate(0.5deg);
+    /* text box shadow */
+    /* sombra horizontal eje X, sombra Y difumunado color */
+    box-shadow: 10px black;
+}
+
+.card img {
+/* ancho */
+    width:100% ;
+    /* altura */
+    height: 100%;
+
+    /* object-fit, es una propiedad que permite ajustar (la corta) la imagen sin perder la relacion de aspecto y trata de ajustar al contenedor*/
+    object-fit: cover;
+    position: absolute;
+
+}
+
+.card p{
+    position: relative;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica;
+    text-shadow: 2px 2px 4px black;
+}
+
+.card:nth-of-type(1){
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+.card:nth-of-type(2){
+    grid-row: 1 / 3;
+  }
+  
+  .card:nth-of-type(3){
+    grid-row: 1 / 3;
+  }
+  
+  .card:nth-of-type(4){
+    grid-column: 2 / 4;
+  }
+  
+  .card:nth-of-type(5){
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+  }
+  
+  .card:nth-of-type(8){
+    grid-column: 3 / 5;
+  }
+  
+  .card:nth-of-type(9){
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
+
+  /* animacion */
+  @keyframes entrada{
+    0%{
+        /* no se va a ver */
+        transform: scale(0);
+    }
+    
+    70%{
+        /* no se va a ver */
+        transform: scale(1.5);
+    }
+    100%{
+        /* no se va a ver */
+        transform: scale(1);
+    }
+  }
