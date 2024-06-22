@@ -1,0 +1,28 @@
+1--npm create vite@latest
+2--//ingresar nombre del proyecto
+3-- seleccionar el framewokr react
+4-- Seleccionar javascript
+
+5--cd 02-react//Después de haber creado el proyecto, ingresar a la carpeta del nombre
+puesto en el punto 2
+6-- npm install // para instalar react
+7-- npm run dev //para correr el servidor
+
+
+
+
+*********para instalar librerias
+npm install nombrelibreria
+npm i nombrelibreria
+
+npm i axios//libreria axios
+
+npm i axios bootstrap react-bootstrap //para instalar varias librerias (3 librerias)
+
+npm i @fortawesome/fontawesome-svg-core //para botones
+
+npm uninstall @fortawesome/fontawesome-svg-core//para desinstalar la anterior librería porque no sirve
+npm i react-router-dom //otra librería para dirigirte a o navegar a un componente concreto
+npm install sweetalert2 //para instalar un alert
+npm install firebase//para instalar firebase
+npm install uuid//para genear nombres
